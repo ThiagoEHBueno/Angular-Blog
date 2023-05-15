@@ -2,15 +2,15 @@
   <div class="container__small-card-content">
     <div class="small-card__picture">
       <img
-        src="https://neilpatel.com/wp-content/uploads/2017/12/codigos-html-para-paginas-web.jpeg"
+        src="{{ photoCover }}"
         alt=""
       />
     </div>
-    <a href=""></a>
+    <a [routerLink]="['content', Id]"></a>
     <div class="small-card__title">
       <h1>
-        <a href="#">
-          HTML: A linguagem de marcação que impulsiona a web moderna
+        <a [routerLink]="['content', Id]">
+          {{ cardTitle }}
         </a>
       </h1>
     </div>

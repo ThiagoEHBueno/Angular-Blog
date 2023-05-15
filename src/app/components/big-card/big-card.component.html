@@ -1,7 +1,7 @@
 <div class="container__big-card">
   <div class="big-card__picture">
     <img
-      src="https://www.revistaferramental.com.br/admin/images/noticias/algoritmo-400-vezes-mais-rapido.jpg"
+      src="{{ photoCover }}"
       alt=""
       height="250px"
     />
@@ -9,18 +9,15 @@
   <a href=""></a>
   <div class="big-card__title">
     <h1>
-      <a href="#">
-        Nova pesquisa revela avanços promissores no desenvolvimento de algoritmos
-        de última geração
+      <a [routerLink]="['content', Id]">
+        {{ cardTitle }}
       </a>
     </h1>
   </div>
   <div class="big-card__description">
     <p>
-      <a href="">
-        Nova pesquisa revela avanços revolucionários em algoritmos, acelerando o
-        processamento e aprimorando a inteligência artificial, com aplicações
-        promissoras em medicina, finanças, transporte e segurança cibernética.
+      <a [routerLink]="['content', Id]">
+        {{ cardDescription }}
       </a>
     </p>
   </div>
